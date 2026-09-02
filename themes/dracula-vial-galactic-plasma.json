@@ -432,7 +432,11 @@
                         {
                             "scope":  [
                                           "entity.name.tag",
-                                          "support.class.component"
+                                          "support.class.component",
+                                          "meta.struct.tag.go",
+                                          "entity.name.tag.go",
+                                          "meta.struct.tag.go string",
+                                          "meta.struct.tag.go string.quoted"
                                       ],
                             "name":  "Tags",
                             "settings":  {
@@ -466,7 +470,12 @@
                         {
                             "scope":  [
                                           "variable.parameter",
-                                          "meta.parameter"
+                                          "meta.parameter",
+                                          "variable.parameter.go",
+                                          "meta.function.parameters variable",
+                                          "meta.parameters.go variable",
+                                          "source.go meta.function.parameters variable",
+                                          "variable.other.receiver.go"
                                       ],
                             "name":  "Parameters",
                             "settings":  {
@@ -476,7 +485,11 @@
                         },
                         {
                             "scope":  [
-                                          "entity.other.attribute-name"
+                                          "entity.other.attribute-name",
+                                          "meta.struct.tag.go",
+                                          "entity.name.tag.go",
+                                          "meta.struct.tag.go string",
+                                          "meta.struct.tag.go string.quoted"
                                       ],
                             "name":  "Attributes",
                             "settings":  {
@@ -535,7 +548,13 @@
                                           "meta.object-literal.key",
                                           "variable.object.property",
                                           "support.type.property-name",
-                                          "entity.name.variable.field"
+                                          "entity.name.variable.field",
+                                          "meta.struct.declaration.go variable.other.declaration.go",
+                                          "meta.struct.declaration.go variable.other.assignment.go",
+                                          "meta.struct.declaration.go variable",
+                                          "meta.field.declaration.go variable",
+                                          "source.go meta.struct.declaration variable",
+                                          "variable.other.declaration.struct.go"
                                       ],
                             "name":  "Fields \u0026 Object Keys",
                             "settings":  {
