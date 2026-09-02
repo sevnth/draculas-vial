@@ -3,7 +3,7 @@
   "displayName": "Dracula's Vial",
   "description": "An alchemical Dracula fork infused with glowing cyan, potion purple, and 7 chromatic elixir editions.",
   "version": "1.0.0",
-  "publisher": "custom",
+  "publisher": "sevnth",
   "author": "sevnth",
   "license": "MIT",
   "repository": {
@@ -80,7 +80,8 @@
     ]
   },
   "scripts": {
-    "validate": "powershell -ExecutionPolicy Bypass -File ./scripts/validate.ps1"
+    "validate": "powershell -ExecutionPolicy Bypass -File ./scripts/validate.ps1",
+    "package": "powershell -ExecutionPolicy Bypass -File ./scripts/package-vsix.ps1"
   },
   "devDependencies": {}
 }
