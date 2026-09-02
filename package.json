@@ -1,0 +1,86 @@
+{
+  "name": "dracula-vial",
+  "displayName": "Dracula's Vial",
+  "description": "An alchemical Dracula fork infused with glowing cyan, potion purple, and 7 chromatic elixir editions.",
+  "version": "1.0.0",
+  "publisher": "custom",
+  "author": "sevnth",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sevnth/draculas-vial.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sevnth/draculas-vial/issues"
+  },
+  "homepage": "https://github.com/sevnth/draculas-vial#readme",
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#191a21",
+    "theme": "dark"
+  },
+  "keywords": [
+    "dracula",
+    "dracula vial",
+    "dark",
+    "theme",
+    "cyan",
+    "purple",
+    "orange",
+    "chromatic",
+    "neon",
+    "synthwave",
+    "high-contrast",
+    "bioluminescence",
+    "pastel"
+  ],
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Dracula's Vial - Chromatic (Rich Full-Spectrum)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dracula-vial-chromatic.json"
+      },
+      {
+        "label": "Dracula's Vial - Pure Triad (Cyan • Purple • Orange)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dracula-vial-pure-triad.json"
+      },
+      {
+        "label": "Dracula's Vial - Neon Synth (Hot Pink • Cyan • Violet)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dracula-vial-neon-synth.json"
+      },
+      {
+        "label": "Dracula's Vial - Deep Abyss (Oceanic Bioluminescence)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dracula-vial-deep-abyss.json"
+      },
+      {
+        "label": "Dracula's Vial - Ice & Fire (Glacial Cyan & Purple Flame)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dracula-vial-ice-fire.json"
+      },
+      {
+        "label": "Dracula's Vial - Galactic Plasma (Plasma Violet & Solar)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dracula-vial-galactic-plasma.json"
+      },
+      {
+        "label": "Dracula's Vial - Cyber Lavender (Pastel Cyber)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dracula-vial-cyber-lavender.json"
+      }
+    ]
+  },
+  "scripts": {
+    "validate": "powershell -ExecutionPolicy Bypass -File ./scripts/validate.ps1"
+  },
+  "devDependencies": {}
+}
