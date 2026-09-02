@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./images/logo.png" alt="Dracula's Vial Official Logo" width="200" height="200" />
+  <img src="https://raw.githubusercontent.com/sevnth/draculas-vial/main/images/logo.png" alt="Dracula's Vial Official Logo" width="200" height="200" />
 </p>
 
 <h1 align="center">🧪 Dracula's Vial</h1>
@@ -12,14 +12,14 @@
 <p align="center">
   <a href="https://marketplace.visualstudio.com/"><img src="https://img.shields.io/badge/VS%20Code-Themes-8be9fd?style=flat-square&logo=visual-studio-code" alt="VS Code" /></a>
   <a href="https://github.com/sevnth/draculas-vial"><img src="https://img.shields.io/badge/GitHub-Repository-50fa7b.svg?style=flat-square&logo=github" alt="GitHub" /></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-bd93f9.svg?style=flat-square" alt="License" /></a>
+  <a href="https://github.com/sevnth/draculas-vial/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-bd93f9.svg?style=flat-square" alt="License" /></a>
   <a href="https://draculatheme.com"><img src="https://img.shields.io/badge/Alchemical%20Fork%20of-Dracula-ff79c6.svg?style=flat-square" alt="Dracula" /></a>
 </p>
 
 ---
 
 <p align="center">
-  <img src="./images/banner.png" alt="Dracula's Vial Showcase Banner" width="100%" />
+  <img src="https://raw.githubusercontent.com/sevnth/draculas-vial/main/images/banner.png" alt="Dracula's Vial Showcase Banner" width="100%" />
 </p>
 
 ---
@@ -32,7 +32,7 @@
 > **Maximum Color Richness**: Expands token definitions so every semantic element (functions, types, keywords, strings, tags, numbers, properties) stands out with high distinction.
 
 <p align="center">
-  <img src="./images/preview-1-chromatic.png" alt="Dracula's Vial - Chromatic Edition" width="100%" />
+  <img src="https://raw.githubusercontent.com/sevnth/draculas-vial/main/images/preview-1-chromatic.png" alt="Dracula's Vial - Chromatic Edition" width="100%" />
 </p>
 
 - **Keywords / Control:** `#bd93f9` (Purple)
@@ -49,7 +49,7 @@
 > **Distraction-Free Minimal Triad**: An intentional 3-accent color scheme focused purely on the core triad (Purple keywords, Cyan functions/types, Orange strings/constants).
 
 <p align="center">
-  <img src="./images/preview-2-pure-triad.png" alt="Dracula's Vial - Pure Triad Edition" width="100%" />
+  <img src="https://raw.githubusercontent.com/sevnth/draculas-vial/main/images/preview-2-pure-triad.png" alt="Dracula's Vial - Pure Triad Edition" width="100%" />
 </p>
 
 - **Keywords / Control:** `#bd93f9` (Purple)
@@ -62,7 +62,7 @@
 > **Cyberpunk Synthwave Glow**: Electric high-contrast colors on a deep obsidian canvas designed for night coding sessions.
 
 <p align="center">
-  <img src="./images/preview-3-neon-synth.png" alt="Dracula's Vial - Neon Synth Edition" width="100%" />
+  <img src="https://raw.githubusercontent.com/sevnth/draculas-vial/main/images/preview-3-neon-synth.png" alt="Dracula's Vial - Neon Synth Edition" width="100%" />
 </p>
 
 - **Keywords:** `#ff2a85` (Hot Pink)
@@ -78,7 +78,7 @@
 > **Deep Oceanic Trench**: Bioluminescent glowing cyan and coral highlights against an ultra-dark oceanic canvas.
 
 <p align="center">
-  <img src="./images/preview-4-deep-abyss.png" alt="Dracula's Vial - Deep Abyss Edition" width="100%" />
+  <img src="https://raw.githubusercontent.com/sevnth/draculas-vial/main/images/preview-4-deep-abyss.png" alt="Dracula's Vial - Deep Abyss Edition" width="100%" />
 </p>
 
 - **Functions & Accents:** `#00f0ff` (Bioluminescent Cyan)
@@ -93,7 +93,7 @@
 > **Cryogenic Contrast**: Sharp contrast between ice-cold glacial cyan and searing purple/orange flame accents.
 
 <p align="center">
-  <img src="./images/preview-5-ice-fire.png" alt="Dracula's Vial - Ice & Fire Edition" width="100%" />
+  <img src="https://raw.githubusercontent.com/sevnth/draculas-vial/main/images/preview-5-ice-fire.png" alt="Dracula's Vial - Ice & Fire Edition" width="100%" />
 </p>
 
 - **Keywords:** `#9254de` (Violet Flare)
@@ -108,7 +108,7 @@
 > **Cosmic Plasma**: Interstellar energy with vibrant plasma purple, ion cyan, radiant pink, and solar amber.
 
 <p align="center">
-  <img src="./images/preview-6-galactic-plasma.png" alt="Dracula's Vial - Galactic Plasma Edition" width="100%" />
+  <img src="https://raw.githubusercontent.com/sevnth/draculas-vial/main/images/preview-6-galactic-plasma.png" alt="Dracula's Vial - Galactic Plasma Edition" width="100%" />
 </p>
 
 - **Keywords:** `#c084fc` (Plasma Purple)
@@ -124,7 +124,7 @@
 > **Ultra-Soft Pastel Cyber**: Designed specifically for long hours of coding with zero visual fatigue.
 
 <p align="center">
-  <img src="./images/preview-7-cyber-lavender.png" alt="Dracula's Vial - Cyber Lavender Edition" width="100%" />
+  <img src="https://raw.githubusercontent.com/sevnth/draculas-vial/main/images/preview-7-cyber-lavender.png" alt="Dracula's Vial - Cyber Lavender Edition" width="100%" />
 </p>
 
 - **Keywords:** `#d8b4fe` (Pastel Lavender)
@@ -148,11 +148,10 @@ An interactive web studio is included directly in `preview/index.html`:
 
 ## 📦 Installation & Activation
 
-### Option 1: Local Installation (PowerShell)
-```powershell
-# Copy the extension to your VS Code extensions directory
-Copy-Item -Recurse "C:\Users\sevnth\draculas-vial" "$HOME\.vscode\extensions\draculas-vial"
-```
+### Option 1: Install from VSIX
+1. Download `dracula-vial-1.0.1.vsix`.
+2. In VS Code, open the Command Palette (`Ctrl + Shift + P` / `Cmd + Shift + P`).
+3. Select **Extensions: Install from VSIX...** and choose `dracula-vial-1.0.1.vsix`.
 
 ### Option 2: Publishing to VS Code Marketplace
 1. Install the VS Code Extension manager:
@@ -175,4 +174,4 @@ Copy-Item -Recurse "C:\Users\sevnth\draculas-vial" "$HOME\.vscode\extensions\dra
 ---
 
 ## 📄 License
-[MIT License](LICENSE) © 2026 Sevnth
+[MIT License](https://github.com/sevnth/draculas-vial/blob/main/LICENSE) © 2026 Sevnth
