@@ -287,15 +287,59 @@
                },
     "semanticHighlighting":  true,
     "semanticTokenColors":  {
-                                "enumMember":  {
-                                                   "foreground":  "#fbbf24"
-                                               },
-                                "variable.constant":  {
-                                                          "foreground":  "#fbbf24"
-                                                      },
-                                "variable.defaultLibrary":  {
+                                "type":  {
+                                             "foreground":  "#34d399",
+                                             "fontStyle":  "italic"
+                                         },
+                                "type.defaultLibrary":  {
+                                                            "foreground":  "#34d399",
+                                                            "fontStyle":  "italic"
+                                                        },
+                                "class":  {
+                                              "foreground":  "#34d399",
+                                              "fontStyle":  "italic"
+                                          },
+                                "class.defaultLibrary":  {
+                                                             "foreground":  "#34d399",
+                                                             "fontStyle":  "italic"
+                                                         },
+                                "interface":  {
+                                                  "foreground":  "#34d399",
+                                                  "fontStyle":  "italic"
+                                              },
+                                "struct":  {
+                                               "foreground":  "#34d399",
+                                               "fontStyle":  "italic"
+                                           },
+                                "enum":  {
+                                             "foreground":  "#34d399",
+                                             "fontStyle":  "italic"
+                                         },
+                                "typeParameter":  {
+                                                      "foreground":  "#34d399",
+                                                      "fontStyle":  "italic"
+                                                  },
+                                "function":  {
+                                                 "foreground":  "#22d3ee"
+                                             },
+                                "function.defaultLibrary":  {
                                                                 "foreground":  "#22d3ee"
                                                             },
+                                "method":  {
+                                               "foreground":  "#22d3ee"
+                                           },
+                                "method.defaultLibrary":  {
+                                                              "foreground":  "#22d3ee"
+                                                          },
+                                "macro":  {
+                                              "foreground":  "#22d3ee"
+                                          },
+                                "property":  {
+                                                 "foreground":  "#e879f9"
+                                             },
+                                "property.declaration":  {
+                                                             "foreground":  "#e879f9"
+                                                         },
                                 "property.readonly":  {
                                                           "foreground":  "#e879f9"
                                                       },
@@ -303,35 +347,40 @@
                                                   "foreground":  "#fb923c",
                                                   "fontStyle":  "italic"
                                               },
-                                "type":  {
-                                             "foreground":  "#34d399"
-                                         },
-                                "class":  {
-                                              "foreground":  "#34d399"
-                                          },
-                                "interface":  {
-                                                  "foreground":  "#34d399",
-                                                  "fontStyle":  "italic"
-                                              },
-                                "struct":  {
-                                               "foreground":  "#34d399"
-                                           },
-                                "function":  {
-                                                 "foreground":  "#22d3ee"
+                                "parameter.declaration":  {
+                                                              "foreground":  "#fb923c",
+                                                              "fontStyle":  "italic"
+                                                          },
+                                "variable":  {
+                                                 "foreground":  "#f5f3ff"
                                              },
-                                "method":  {
+                                "variable.declaration":  {
+                                                             "foreground":  "#f5f3ff"
+                                                         },
+                                "variable.readonly":  {
+                                                          "foreground":  "#f5f3ff"
+                                                      },
+                                "variable.defaultLibrary":  {
+                                                                "foreground":  "#34d399"
+                                                            },
+                                "enumMember":  {
+                                                   "foreground":  "#fbbf24"
+                                               },
+                                "variable.readonly.defaultLibrary":  {
+                                                                         "foreground":  "#fbbf24"
+                                                                     },
+                                "namespace":  {
+                                                  "foreground":  "#22d3ee"
+                                              },
+                                "namespace.defaultLibrary":  {
+                                                                 "foreground":  "#34d399"
+                                                             },
+                                "package":  {
+                                                "foreground":  "#22d3ee"
+                                            },
+                                "module":  {
                                                "foreground":  "#22d3ee"
                                            },
-                                "macro":  {
-                                              "foreground":  "#c084fc"
-                                          },
-                                "keyword":  {
-                                                "foreground":  "#c084fc"
-                                            },
-                                "comment":  {
-                                                "foreground":  "#5e638c",
-                                                "fontStyle":  "italic"
-                                            },
                                 "string":  {
                                                "foreground":  "#f472b6"
                                            },
@@ -340,15 +389,29 @@
                                            },
                                 "operator":  {
                                                  "foreground":  "#c084fc"
-                                             }
+                                             },
+                                "comment":  {
+                                                "foreground":  "#5e638c",
+                                                "fontStyle":  "italic"
+                                            },
+                                "decorator":  {
+                                                  "foreground":  "#c084fc"
+                                              },
+                                "regexp":  {
+                                               "foreground":  "#f472b6"
+                                           }
                             },
     "tokenColors":  [
                         {
                             "scope":  [
                                           "comment",
                                           "punctuation.definition.comment",
-                                          "unused.comment",
-                                          "wildcard.comment"
+                                          "comment.block",
+                                          "comment.block.documentation",
+                                          "comment.line",
+                                          "comment.line.double-slash",
+                                          "comment.line.documentation",
+                                          "string.quoted.docstring"
                                       ],
                             "name":  "Comments",
                             "settings":  {
@@ -358,60 +421,85 @@
                         },
                         {
                             "scope":  [
-                                          "comment.block.documentation",
-                                          "comment.line.documentation"
-                                      ],
-                            "name":  "Doc Comments",
-                            "settings":  {
-                                             "foreground":  "#5e638c",
-                                             "fontStyle":  "italic"
-                                         }
-                        },
-                        {
-                            "scope":  [
-                                          "keyword",
-                                          "keyword.control",
-                                          "keyword.control.flow",
-                                          "keyword.control.loop",
-                                          "keyword.control.conditional",
-                                          "keyword.control.import",
-                                          "keyword.control.export",
-                                          "keyword.declaration"
-                                      ],
-                            "name":  "Keywords",
-                            "settings":  {
-                                             "foreground":  "#c084fc",
-                                             "fontStyle":  "bold"
-                                         }
-                        },
-                        {
-                            "scope":  [
-                                          "storage",
-                                          "storage.type",
-                                          "storage.modifier",
-                                          "storage.type.function",
-                                          "storage.type.class",
+                                          "keyword.type.go",
+                                          "keyword.type",
+                                          "keyword.declaration.type.go",
+                                          "keyword.declaration.type",
+                                          "keyword.declaration.struct.go",
+                                          "keyword.declaration.struct",
+                                          "keyword.declaration.interface.go",
+                                          "keyword.declaration.interface",
+                                          "storage.type.interface.ts",
+                                          "storage.type.interface.tsx",
+                                          "storage.type.interface.js",
+                                          "storage.type.interface.jsx",
+                                          "storage.type.type.ts",
+                                          "storage.type.type.tsx",
+                                          "storage.type.type.js",
+                                          "storage.type.enum.ts",
+                                          "storage.type.enum.tsx",
+                                          "storage.type.class.ts",
+                                          "storage.type.class.tsx",
+                                          "storage.type.class.js",
+                                          "storage.type.class.jsx",
+                                          "storage.type.struct.go",
+                                          "storage.type.interface.go",
+                                          "storage.type.type.go",
                                           "storage.type.struct",
-                                          "storage.type.var",
-                                          "storage.type.let",
-                                          "storage.type.const"
+                                          "storage.type.interface",
+                                          "storage.type.type",
+                                          "storage.type.enum",
+                                          "storage.type.class",
+                                          "storage.type.rust",
+                                          "storage.modifier.rust"
                                       ],
-                            "name":  "Storage",
+                            "name":  "Type Declaration Keywords -\u003e Pink",
                             "settings":  {
-                                             "foreground":  "#c084fc"
+                                             "foreground":  "#e879f9"
                                          }
                         },
                         {
                             "scope":  [
-                                          "entity.name.function",
-                                          "entity.name.function.definition",
-                                          "entity.name.function.call",
-                                          "support.function",
-                                          "meta.function-call"
+                                          "storage.type.primitive.go",
+                                          "storage.type.numeric.go",
+                                          "storage.type.string.go",
+                                          "storage.type.boolean.go",
+                                          "storage.type.byte.go",
+                                          "storage.type.rune.go",
+                                          "storage.type.error.go",
+                                          "storage.type.map.go",
+                                          "storage.type.chan.go",
+                                          "storage.type.slice.go",
+                                          "storage.type.uint.go",
+                                          "storage.type.uint8.go",
+                                          "storage.type.uint16.go",
+                                          "storage.type.uint32.go",
+                                          "storage.type.uint64.go",
+                                          "storage.type.int.go",
+                                          "storage.type.int8.go",
+                                          "storage.type.int16.go",
+                                          "storage.type.int32.go",
+                                          "storage.type.int64.go",
+                                          "storage.type.float32.go",
+                                          "storage.type.float64.go",
+                                          "storage.type.complex64.go",
+                                          "storage.type.complex128.go",
+                                          "storage.type.uintptr.go",
+                                          "storage.type.primitive",
+                                          "support.type.primitive.ts",
+                                          "support.type.primitive.tsx",
+                                          "support.type.builtin.ts",
+                                          "support.type.builtin.tsx",
+                                          "support.type.primitive",
+                                          "support.type.builtin",
+                                          "support.type.python",
+                                          "support.type.rust",
+                                          "support.type.primitive.rust"
                                       ],
-                            "name":  "Functions \u0026 Methods",
+                            "name":  "Primitive Built-in Types -\u003e Green Italic",
                             "settings":  {
-                                             "foreground":  "#22d3ee"
+                                             "foreground":  "#34d399",
+                                             "fontStyle":  "italic"
                                          }
                         },
                         {
@@ -420,10 +508,25 @@
                                           "entity.name.type.class",
                                           "entity.name.type.struct",
                                           "entity.name.type.interface",
+                                          "entity.name.type.enum",
+                                          "entity.name.type.alias",
+                                          "entity.name.type.go",
+                                          "entity.name.type.struct.go",
+                                          "entity.name.type.interface.go",
+                                          "entity.name.type.type.go",
+                                          "entity.name.type.ts",
+                                          "entity.name.type.tsx",
+                                          "entity.name.type.interface.ts",
+                                          "entity.name.type.interface.tsx",
+                                          "entity.name.type.alias.ts",
+                                          "entity.name.type.alias.tsx",
+                                          "entity.name.class",
                                           "support.type",
-                                          "support.class"
+                                          "support.class",
+                                          "support.type.go",
+                                          "support.class.react"
                                       ],
-                            "name":  "Types \u0026 Structs",
+                            "name":  "User Types, Classes \u0026 Interfaces -\u003e Green Italic",
                             "settings":  {
                                              "foreground":  "#34d399",
                                              "fontStyle":  "italic"
@@ -431,26 +534,175 @@
                         },
                         {
                             "scope":  [
-                                          "entity.name.tag",
-                                          "support.class.component",
+                                          "variable.object.property",
+                                          "variable.other.property",
+                                          "variable.other.object.property",
+                                          "variable.other.member",
+                                          "variable.other.property.go",
+                                          "variable.other.member.go",
+                                          "entity.name.variable.field",
+                                          "entity.name.variable.field.go",
+                                          "entity.name.variable.field.ts",
+                                          "entity.name.variable.field.tsx",
+                                          "support.type.property-name",
+                                          "meta.object-literal.key",
+                                          "meta.object-literal.key.ts",
+                                          "meta.object-literal.key.tsx",
+                                          "meta.object-literal.key.js",
+                                          "meta.object-literal.key.jsx",
+                                          "variable.other.declaration.struct.go",
+                                          "source.go meta.struct.declaration variable.other.declaration.go",
+                                          "source.go meta.struct.declaration variable.other.assignment.go",
+                                          "meta.struct.declaration.go variable.other.declaration.go",
+                                          "meta.struct.declaration.go variable.other.assignment.go",
+                                          "source.go meta.composite-literal.go variable.other.assignment.go",
+                                          "meta.composite-literal.go variable.other.assignment.go"
+                                      ],
+                            "name":  "Properties, Fields \u0026 Object Keys -\u003e Pink",
+                            "settings":  {
+                                             "foreground":  "#e879f9"
+                                         }
+                        },
+                        {
+                            "scope":  [
+                                          "variable.parameter",
+                                          "variable.parameter.function",
+                                          "variable.parameter.go",
+                                          "variable.parameter.ts",
+                                          "variable.parameter.tsx",
+                                          "variable.parameter.js",
+                                          "variable.parameter.jsx",
+                                          "variable.other.receiver.go",
+                                          "meta.parameters.go variable.other.declaration.go",
+                                          "meta.function.parameters.go variable.other.declaration.go",
+                                          "meta.receiver.go variable.other.declaration.go",
+                                          "variable.parameter.function.python",
+                                          "variable.language.special.self.python",
+                                          "variable.language.special.cls.python",
+                                          "variable.parameter.rust"
+                                      ],
+                            "name":  "Parameters \u0026 Receivers -\u003e Tangerine Italic",
+                            "settings":  {
+                                             "foreground":  "#fb923c",
+                                             "fontStyle":  "italic"
+                                         }
+                        },
+                        {
+                            "scope":  [
                                           "meta.struct.tag.go",
                                           "entity.name.tag.go",
                                           "meta.struct.tag.go string",
-                                          "meta.struct.tag.go string.quoted"
+                                          "meta.struct.tag.go string.quoted",
+                                          "string.quoted.raw.go",
+                                          "punctuation.definition.string.raw.go",
+                                          "entity.other.attribute-name",
+                                          "entity.other.attribute-name.html",
+                                          "entity.other.attribute-name.jsx",
+                                          "entity.other.attribute-name.tsx",
+                                          "entity.other.attribute-name.xml"
                                       ],
-                            "name":  "Tags",
+                            "name":  "Struct Tags \u0026 Attributes -\u003e Tangerine",
+                            "settings":  {
+                                             "foreground":  "#fb923c"
+                                         }
+                        },
+                        {
+                            "scope":  [
+                                          "entity.name.function",
+                                          "entity.name.function.go",
+                                          "entity.name.function.ts",
+                                          "entity.name.function.tsx",
+                                          "entity.name.function.js",
+                                          "entity.name.function.jsx",
+                                          "entity.name.function.python",
+                                          "entity.name.function.rust",
+                                          "support.function",
+                                          "support.function.builtin",
+                                          "support.function.builtin.go",
+                                          "support.function.go",
+                                          "support.function.ts",
+                                          "support.function.tsx",
+                                          "meta.function-call",
+                                          "meta.function-call.go",
+                                          "meta.method-call"
+                                      ],
+                            "name":  "Functions \u0026 Methods -\u003e Cyan",
                             "settings":  {
                                              "foreground":  "#22d3ee"
                                          }
                         },
                         {
                             "scope":  [
+                                          "entity.name.package",
+                                          "entity.name.package.go",
+                                          "entity.name.namespace",
+                                          "entity.name.module",
+                                          "support.other.namespace",
+                                          "support.other.namespace.use.go",
+                                          "support.other.package.use.go",
+                                          "support.package.go",
+                                          "support.module.go",
+                                          "variable.other.package.go",
+                                          "support.other.module",
+                                          "support.class.builtin"
+                                      ],
+                            "name":  "Package \u0026 Namespace -\u003e Cyan",
+                            "settings":  {
+                                             "foreground":  "#22d3ee"
+                                         }
+                        },
+                        {
+                            "scope":  [
+                                          "keyword",
+                                          "keyword.control",
+                                          "keyword.control.flow",
+                                          "keyword.control.conditional",
+                                          "keyword.control.loop",
+                                          "keyword.control.import",
+                                          "keyword.control.export",
+                                          "keyword.control.trycatch",
+                                          "keyword.control.async",
+                                          "keyword.control.await",
+                                          "keyword.control.return",
+                                          "keyword.control.from",
+                                          "keyword.control.default",
+                                          "keyword.control.go",
+                                          "keyword.statement.go",
+                                          "keyword.import.go",
+                                          "keyword.package.go",
+                                          "keyword.function.go",
+                                          "keyword.function",
+                                          "keyword.var.go",
+                                          "keyword.const.go",
+                                          "keyword.other",
+                                          "keyword.other.rust",
+                                          "storage.type",
+                                          "storage.type.function",
+                                          "storage.type.function.ts",
+                                          "storage.type.function.tsx",
+                                          "storage.type.function.python",
+                                          "storage.type.class.python",
+                                          "storage.type.var",
+                                          "storage.type.let",
+                                          "storage.type.const"
+                                      ],
+                            "name":  "Keywords \u0026 Flow Control -\u003e Purple Bold",
+                            "settings":  {
+                                             "foreground":  "#c084fc",
+                                             "fontStyle":  "bold"
+                                         }
+                        },
+                        {
+                            "scope":  [
                                           "string",
                                           "string.quoted",
+                                          "string.quoted.single",
+                                          "string.quoted.double",
                                           "string.template",
-                                          "string.raw"
+                                          "punctuation.definition.string.begin",
+                                          "punctuation.definition.string.end"
                                       ],
-                            "name":  "Strings",
+                            "name":  "Strings -\u003e Orange",
                             "settings":  {
                                              "foreground":  "#f472b6"
                                          }
@@ -460,53 +712,30 @@
                                           "constant.numeric",
                                           "constant.numeric.integer",
                                           "constant.numeric.float",
-                                          "constant.numeric.hex"
+                                          "constant.numeric.hex",
+                                          "constant.numeric.binary",
+                                          "constant.numeric.octal"
                                       ],
-                            "name":  "Numbers",
+                            "name":  "Numbers -\u003e Yellow",
                             "settings":  {
                                              "foreground":  "#fbbf24"
                                          }
                         },
                         {
                             "scope":  [
-                                          "variable.parameter",
-                                          "meta.parameter",
-                                          "variable.parameter.go",
-                                          "meta.function.parameters variable",
-                                          "meta.parameters.go variable",
-                                          "source.go meta.function.parameters variable",
-                                          "variable.other.receiver.go"
-                                      ],
-                            "name":  "Parameters",
-                            "settings":  {
-                                             "foreground":  "#fb923c",
-                                             "fontStyle":  "italic"
-                                         }
-                        },
-                        {
-                            "scope":  [
-                                          "entity.other.attribute-name",
-                                          "meta.struct.tag.go",
-                                          "entity.name.tag.go",
-                                          "meta.struct.tag.go string",
-                                          "meta.struct.tag.go string.quoted"
-                                      ],
-                            "name":  "Attributes",
-                            "settings":  {
-                                             "foreground":  "#fb923c",
-                                             "fontStyle":  "italic"
-                                         }
-                        },
-                        {
-                            "scope":  [
                                           "constant.language",
                                           "constant.language.boolean",
-                                          "constant.language.nil",
                                           "constant.language.null",
+                                          "constant.language.nil",
+                                          "constant.language.nil.go",
+                                          "constant.language.true.go",
+                                          "constant.language.false.go",
+                                          "constant.language.undefined",
                                           "constant.language.true",
-                                          "constant.language.false"
+                                          "constant.language.false",
+                                          "constant.language.python"
                                       ],
-                            "name":  "Constants \u0026 Booleans",
+                            "name":  "Language Constants -\u003e Yellow Bold",
                             "settings":  {
                                              "foreground":  "#fbbf24",
                                              "fontStyle":  "bold"
@@ -515,61 +744,36 @@
                         {
                             "scope":  [
                                           "constant.other",
-                                          "variable.other.constant"
+                                          "variable.other.constant",
+                                          "variable.other.enummember"
                                       ],
-                            "name":  "User Constants",
+                            "name":  "Constants \u0026 Enum Values -\u003e Yellow",
                             "settings":  {
                                              "foreground":  "#fbbf24"
                                          }
                         },
                         {
                             "scope":  [
-                                          "constant.character.escape",
-                                          "string.regexp"
+                                          "entity.name.tag",
+                                          "entity.name.tag.custom",
+                                          "entity.name.tag.jsx",
+                                          "entity.name.tag.tsx",
+                                          "entity.name.tag.html",
+                                          "support.class.component"
                                       ],
-                            "name":  "Escapes",
+                            "name":  "HTML/JSX Tags -\u003e Cyan",
                             "settings":  {
-                                             "foreground":  "#e879f9"
+                                             "foreground":  "#22d3ee"
                                          }
                         },
                         {
                             "scope":  [
-                                          "variable",
-                                          "variable.other",
-                                          "variable.other.readwrite"
+                                          "support.type.property-name.json",
+                                          "source.json meta.structure.dictionary.json support.type.property-name.json"
                                       ],
-                            "name":  "Variables",
+                            "name":  "JSON Keys -\u003e Cyan",
                             "settings":  {
-                                             "foreground":  "#f5f3ff"
-                                         }
-                        },
-                        {
-                            "scope":  [
-                                          "meta.object-literal.key",
-                                          "variable.object.property",
-                                          "support.type.property-name",
-                                          "entity.name.variable.field",
-                                          "meta.struct.declaration.go variable.other.declaration.go",
-                                          "meta.struct.declaration.go variable.other.assignment.go",
-                                          "meta.struct.declaration.go variable",
-                                          "meta.field.declaration.go variable",
-                                          "source.go meta.struct.declaration variable",
-                                          "variable.other.declaration.struct.go"
-                                      ],
-                            "name":  "Fields \u0026 Object Keys",
-                            "settings":  {
-                                             "foreground":  "#e879f9"
-                                         }
-                        },
-                        {
-                            "scope":  [
-                                          "entity.name.function.decorator",
-                                          "meta.decorator"
-                                      ],
-                            "name":  "Decorators",
-                            "settings":  {
-                                             "foreground":  "#c084fc",
-                                             "fontStyle":  "italic"
+                                             "foreground":  "#22d3ee"
                                          }
                         },
                         {
@@ -578,149 +782,49 @@
                                           "keyword.operator.arithmetic",
                                           "keyword.operator.bitwise",
                                           "keyword.operator.assignment",
-                                          "keyword.operator.comparison"
+                                          "keyword.operator.comparison",
+                                          "keyword.operator.address.go",
+                                          "keyword.operator.channel.go",
+                                          "entity.name.function.decorator",
+                                          "meta.decorator",
+                                          "punctuation.decorator"
                                       ],
-                            "name":  "Operators",
+                            "name":  "Operators \u0026 Decorators -\u003e Purple",
                             "settings":  {
                                              "foreground":  "#c084fc"
                                          }
                         },
                         {
                             "scope":  [
-                                          "punctuation",
-                                          "punctuation.separator",
-                                          "punctuation.terminator"
+                                          "variable",
+                                          "variable.other",
+                                          "variable.other.readwrite"
                                       ],
-                            "name":  "Delimiters",
+                            "name":  "Variables -\u003e Foreground",
                             "settings":  {
                                              "foreground":  "#f5f3ff"
                                          }
                         },
                         {
                             "scope":  [
-                                          "punctuation.brackets",
-                                          "punctuation.curly.brace",
-                                          "punctuation.square.bracket"
+                                          "punctuation",
+                                          "punctuation.separator",
+                                          "punctuation.terminator",
+                                          "punctuation.definition.block"
                                       ],
-                            "name":  "Brackets",
+                            "name":  "Punctuation -\u003e Foreground",
                             "settings":  {
-                                             "foreground":  "#c084fc"
+                                             "foreground":  "#f5f3ff"
                                          }
                         },
                         {
                             "scope":  [
-                                          "support.type.property-name.json"
-                                      ],
-                            "name":  "JSON Keys",
-                            "settings":  {
-                                             "foreground":  "#22d3ee"
-                                         }
-                        },
-                        {
-                            "scope":  [
-                                          "source.json meta.structure.dictionary.value.json string.quoted.double.json"
-                                      ],
-                            "name":  "JSON Values",
-                            "settings":  {
-                                             "foreground":  "#f472b6"
-                                         }
-                        },
-                        {
-                            "scope":  [
-                                          "heading.1.markdown",
-                                          "heading.2.markdown",
-                                          "markup.heading"
-                                      ],
-                            "name":  "Markdown Headings",
-                            "settings":  {
-                                             "foreground":  "#c084fc",
-                                             "fontStyle":  "bold"
-                                         }
-                        },
-                        {
-                            "scope":  [
-                                          "markup.bold"
-                                      ],
-                            "name":  "Markdown Bold",
-                            "settings":  {
-                                             "foreground":  "#fbbf24",
-                                             "fontStyle":  "bold"
-                                         }
-                        },
-                        {
-                            "scope":  [
-                                          "markup.raw.inline",
-                                          "markup.raw.block"
-                                      ],
-                            "name":  "Markdown Code",
-                            "settings":  {
-                                             "foreground":  "#34d399"
-                                         }
-                        },
-                        {
-                            "scope":  [
-                                          "entity.other.attribute-name.class.css",
-                                          "entity.name.tag.css"
-                                      ],
-                            "name":  "CSS Selectors",
-                            "settings":  {
-                                             "foreground":  "#34d399"
-                                         }
-                        },
-                        {
-                            "scope":  [
-                                          "support.type.property-name.css"
-                                      ],
-                            "name":  "CSS Properties",
-                            "settings":  {
-                                             "foreground":  "#22d3ee"
-                                         }
-                        },
-                        {
-                            "scope":  [
-                                          "support.constant.property-value.css",
-                                          "constant.numeric.css"
-                                      ],
-                            "name":  "CSS Values",
-                            "settings":  {
-                                             "foreground":  "#fbbf24"
-                                         }
-                        },
-                        {
-                            "scope":  [
-                                          "markup.deleted"
-                                      ],
-                            "name":  "Git Deleted",
-                            "settings":  {
-                                             "foreground":  "#f87171"
-                                         }
-                        },
-                        {
-                            "scope":  [
-                                          "markup.inserted"
-                                      ],
-                            "name":  "Git Inserted",
-                            "settings":  {
-                                             "foreground":  "#34d399"
-                                         }
-                        },
-                        {
-                            "scope":  [
-                                          "markup.changed"
-                                      ],
-                            "name":  "Git Changed",
-                            "settings":  {
-                                             "foreground":  "#f472b6"
-                                         }
-                        },
-                        {
-                            "scope":  [
-                                          "invalid"
+                                          "invalid",
+                                          "invalid.illegal"
                                       ],
                             "name":  "Invalid",
                             "settings":  {
-                                             "foreground":  "#f87171",
-                                             "fontStyle":  "underline"
+                                             "foreground":  "#f87171"
                                          }
                         }
                     ]

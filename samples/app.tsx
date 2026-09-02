@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
 
-interface MetricRecord {
+interface VialMetric {
   id: string;
   timestamp: number;
   label: string;
@@ -15,21 +15,21 @@ interface DashboardProps {
   onAlertTriggered?: (alertId: string, level: string) => void;
 }
 
-export const MetricsDashboard: React.FC<DashboardProps> = ({
+export const DraculaVialDashboard: React.FC<DashboardProps> = ({
   title,
   refreshIntervalMs = 3000,
   onAlertTriggered,
 }) => {
-  const [metrics, setMetrics] = useState<MetricRecord[]>([]);
+  const [metrics, setMetrics] = useState<VialMetric[]>([]);
   const [filterTag, setFilterTag] = useState<string>('all');
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
-  // Fetch telemetry from WebSocket endpoint
+  // Fetch elixir telemetry from WebSocket endpoint
   const fetchTelemetry = useCallback(async () => {
     try {
       setIsLoading(true);
-      const response = await fetch('/api/v1/telemetry/live');
-      const data: MetricRecord[] = await response.json();
+      const response = await fetch('/api/v1/vial/telemetry');
+      const data: VialMetric[] = await response.json();
       setMetrics(data);
     } catch (error) {
       console.error('Failed to stream metrics:', error);
@@ -53,7 +53,7 @@ export const MetricsDashboard: React.FC<DashboardProps> = ({
       <header className="dashboard-header flex items-center justify-between">
         <h1 className="text-xl font-bold tracking-tight text-cyan-400">{title}</h1>
         <div className="badge-group flex gap-2">
-          <span className="badge badge-purple">Live Nodes: {metrics.length}</span>
+          <span className="badge badge-purple">Live Elixirs: {metrics.length}</span>
           {activeAlertCount > 0 && (
             <span className="badge badge-orange">Alerts: {activeAlertCount}</span>
           )}
