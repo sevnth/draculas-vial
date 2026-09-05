@@ -2,13 +2,21 @@
 
 All notable changes to the "Dracula's Vial" extension will be documented in this file.
 
+## [1.0.2] - 2026-09-02
+
+### Fixed & Enhanced
+- **Marketplace & VSIX Image Rendering**: Converted all README and documentation image URLs to absolute HTTPS GitHub raw assets so all badges, logos, banners, and screenshots render flawlessly in the VS Code Marketplace, Extension Details webview, and GitHub repository.
+- **Package & Namespace Highlighting**: Enhanced TextMate and semantic rules for imported modules and namespaces (`fmt`, `context`, `time`, `big`, `ethclient`, `types`, `React`, `asyncio`, etc.) to highlight in Electric Cyan (`#00f0ff`) and Spring Green (`#00f5d4`).
+- **Composite Type Constructors**: Mapped Go type constructors (`map`, `chan`, `slice`) to render in Green Italic.
+
+---
+
 ## [1.0.1] - 2026-09-02
 
 ### Fixed & Enhanced
 - **100% Visual Parity with Previews**: Completely audited and aligned TextMate scopes and Semantic Token definitions across all 7 editions to guarantee exact 1:1 visual fidelity with the Interactive Color Lab studio.
 - **Type Declaration Keywords**: Precision mapping for `type`, `struct`, `interface`, and `enum` keywords to render in Signature Pink/Magenta (`#f15bb5` in Deep Abyss / `#ff79c6` in Chromatic).
-- **Package & Namespace Highlighting**: Added comprehensive scopes for imported packages, modules, and namespaces (`fmt`, `context`, `time`, `big`, `ethclient`, `types`, `React`, `asyncio`, etc.) in Electric Cyan (`#00f0ff`) and Spring Green (`#00f5d4`).
-- **Primitive & Composite Types**: Standardized built-in types (`string`, `number`, `bool`, `uint32`, `int64`, `float64`, `error`, `map`, `chan`, `slice`) in Green Italic across Go, TypeScript/TSX, Python, and Rust.
+- **Primitive & Composite Types**: Standardized built-in types (`string`, `number`, `bool`, `uint32`, `int64`, `float64`, `error`) in Green Italic across Go, TypeScript/TSX, Python, and Rust.
 - **Struct Fields & Object Properties**: Ensured struct field definitions, interface properties, and composite literal keys render consistently in Signature Pink.
 - **Language Server Interoperability**: Fine-tuned semantic token hierarchy so language servers (`gopls`, `tsserver`, `pylance`, `rust-analyzer`) preserve fine-grained TextMate keyword differentiation.
 - **Sample Codebases**: Synchronized `samples/app.tsx` and `samples/executor.go` with preview code samples for instant validation.
